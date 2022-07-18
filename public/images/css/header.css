@@ -1,0 +1,58 @@
+header{
+    font-size: 12px;
+    background-color:  #EAC926;
+    box-sizing: border-box;
+}
+
+#logo{
+    max-width: 250px;
+    padding: 15px;
+}
+.searchbar{
+    margin: 15px;
+}
+
+nav{
+    list-style-type: none;
+    display: none;
+  }
+
+
+a{ 
+        text-decoration: none; 
+        color: black; 
+       }
+
+
+h5{
+    text-align: center;
+}
+.burger{
+    text-align: center;
+}
+#burger{
+    color: white;
+    font-size: large;
+    text-align: center;
+    display: inline-block;
+    background-color:  #1259c3;
+    padding: 10px ;
+    border-radius: 8px;
+    margin: 4px 2px;
+}
+
+.banner{
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    nav{
+      display: flex;
+      flex-direction: column;
+    }
+    .burger{
+        display: none;
+    }
+  }
+  
