@@ -1,7 +1,13 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 main{
   width: 100%;
   background-color: #ebebeb;
 }
+
 body{
   font-family: 'Roboto', sans-serif;
 }
@@ -34,19 +40,20 @@ article{
   padding-right: 15px;
   box-sizing: border-box;
   background-color: white;
-  line-height: .1em;
   align-items: center;
 }
 
 .price{
   box-sizing: border-box;
   font-size: 18px;
+  width: 30%;
 }
 
 .discount{
   box-sizing: border-box;
   font-size:  16px; 
   color: #39b54a;
+  width: 70%;
 }
 
 h2{
@@ -66,26 +73,33 @@ p{
   font-size: 12px;
 }
 .truck{
-  color:#39b54a;
-  border-radius: 50%;
-  text-align: top left;
-  border-style: solid;
-  border-color: #39b54a;
-  height: 25px;
-  width: 25px;
-  box-sizing: border-box;
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
 }
 
 @media (min-width: 768px) {
   .description{
-    display: flex;
+    display: block;
+    color: #666;
+    margin-top: 15px;
   }
   .item{
     box-shadow: 0 px 0px 10px rgb(100, 100, 100);
   }
   .article{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
     box-shadow: 0 px 0px 10px rgb(100, 100, 100);
   }
-
-
 }

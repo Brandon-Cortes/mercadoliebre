@@ -49,7 +49,7 @@ h5{
 @media (min-width: 768px) {
     nav{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
     }
     .burger{
         display: none;
